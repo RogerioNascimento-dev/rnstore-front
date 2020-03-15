@@ -5,7 +5,7 @@ import {MdAddShoppingCart} from 'react-icons/md';
 
 export default function Home() {
   return (
-    <ProductList>
+    <ProductList className="products-list">
       <li>
         <strong>Dr. Gabriela Amanda das Neves Jr. <span>Descrição do produto</span></strong>
         <span>R$150,55</span>

@@ -23,4 +23,13 @@ export default createGlobalStyle`
   button{
     cursor: pointer;
   }
+  @media (max-width: 800px) {
+  .products-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+  .products-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 `;
