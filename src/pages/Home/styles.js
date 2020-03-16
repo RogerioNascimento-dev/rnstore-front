@@ -23,9 +23,19 @@ export const ProductList = styled.ul`
         color:#ccc;
       }    
     }
-    > span{
+    div{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;      
+      > span{
       font-size: 21px;
       font-weight: bold;
+      }
+      > strong{        
+        margin-bottom:5px;
+        font-size:10px;
+        color:#F11;
+      }
     }
     button{
       background-color: #0057a0;
