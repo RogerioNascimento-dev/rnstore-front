@@ -24,7 +24,7 @@ Considere sempre quantidade 1 para cada item adicionado na tela de venda;
 
 
 # - Bando de dados
-![modelagem database](https://0qlvda.ch.files.1drv.com/y4p5FeyMgYPd7ofY6cL7n1RCoYlB6UjVqbjg6njgGr9qhEDV8yvxlrQsquS5dqce9kFyjiAhY75kRjkxWzjrEy4gnTDW3kyU_F6IlZXRBXlumxUghuX-wq2hvGfIQyE2BpXQ7tYRs5edXVhdC9mvG8wd6ahgnqqFrsrxaB4LKQVsB6qf9tkCjVS4VAMPoi80a6OTJtnpZuCKLqFG6yhjHx6jqJux6ev4tVkxFSHAU3rRm8/modelagem%20database.png)
+![modelagem database](https://i.ibb.co/BP5DyXg/modelagem-database.png)
 
 Salvo as tabelas users, migrations e failed_jobs que foram criadas automaticamente por padrão pelo laravel no momento da execução da migration, a modelagem que atendeu esta implementação ficou com as seguintes entidades.
 * sales onde ficam armazenada as vendas
@@ -53,9 +53,9 @@ Segue algumas observações e libs utilizadas no frontend
 # - Backend api Rest em LARAVEL 7.X
 
 
-### Rotas
+### Endpoints
 
-| Verbo  | Rota | Descrição | POST | QUERY PARAM |
+| Verbo  | Endpoint | Descrição | POST | QUERY PARAM |
 | ------ | ------ | ------ | ------ | ------ |
 | GET | /api/customers | Retorna todos os clientes cadastrados | ||
 | GET | /api/products | Retorna todos os produtos cadastrados | ||
