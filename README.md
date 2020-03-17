@@ -55,7 +55,7 @@ Segue algumas observações e libs utilizadas no frontend
 
 ### Endpoints
 
-| Verbo  | Endpoint | Descrição | POST | QUERY PARAM |
+| Verbo  | Endpoint | Descrição | Body | Param |
 | ------ | ------ | ------ | ------ | ------ |
 | GET | /api/customers | Retorna todos os clientes cadastrados | ||
 | GET | /api/products | Retorna todos os produtos cadastrados | ||
