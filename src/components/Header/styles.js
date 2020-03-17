@@ -3,13 +3,27 @@ import {Link} from 'react-router-dom';
 import {darken} from 'polished';
 
 export const Container = styled.header`
+  
   display: flex;
   justify-content: space-between;
   align-items:center;
-  margin: 50px 0;  
+  margin-bottom: 10px;  
+  background-color: #0057a0;  
  > div{
+    flex:1;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+  div.containerHeader{
+    max-width: 1020px !important;
+    padding 10px 20px;
+    margin: 0 auto;
+    > div{
+      flex:1;
+      display: flex;
+      flex-direction:row;      
+    }
   }
 `;
 export const Menu = styled(Link)`

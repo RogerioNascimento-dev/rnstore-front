@@ -3,9 +3,9 @@ import {formatPrice} from '../../util/format';
 import { Container,SaleTable } from './styles';
 import {MdDelete} from 'react-icons/md';
 import produce from 'immer';
-
 import api from '../../services/api';
 import { toast } from 'react-toastify';
+import {parseISO, format} from 'date-fns';
 
 export default function Sales() {
   const [sales,setSales] = useState([]);
@@ -15,14 +15,15 @@ export default function Sales() {
       const response = await api.get('/sales');
       const sales = response.data.map(sale => ({
         ...sale,
-        totalPriceFormated: formatPrice(sale.total_price)
+        totalPriceFormated: formatPrice(sale.total_price),
+        saleDateFormated: format(parseISO(sale.sale_date),'dd/MM/YYY'),
       }))
 
       setSales(sales);
     }
     getAllSales();
   },[]);
-  
+  console.tron.log(sales);
   async function handleDelete(saleId){
     await api.delete(`/sales/${saleId}`);  
     const newSales = produce(sales, draft =>{
@@ -36,7 +37,7 @@ export default function Sales() {
   }
   
   return (   
-
+<div className="rootContainer">
     <Container>       
         <div>        
         {sales.length > 0 && (
@@ -66,7 +67,7 @@ export default function Sales() {
           <strong>{sale.estimate_delivery} dias</strong>
             </td>
             <td>
-              <strong>{sale.sale_date}</strong>
+              <strong>{sale.saleDateFormated}</strong>
              </td>
             <td>
               <strong>{sale.totalPriceFormated}</strong>
@@ -79,5 +80,6 @@ export default function Sales() {
         </tbody>
       </SaleTable>      
     </Container>
+    </div>
   );
 }

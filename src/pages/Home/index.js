@@ -28,7 +28,7 @@ export default function Home() {
   },[]); 
 
   return (
-    
+    <div className="rootContainer">
     <ProductList className="products-list">
       {products.map(product =>(
         <li key={product.id}>
@@ -46,5 +46,6 @@ export default function Home() {
       </li>
       ))}
     </ProductList>
+    </div>
   );
 }

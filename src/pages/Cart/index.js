@@ -90,12 +90,12 @@ export default function Cart() {
   }
 
   return (
-    <Container>      
-      
+    <div className="rootContainer">
+    <Container>  
       <select onChange={(e) => handleChangeCustomer(e.target.value)} >
         <option value="0">--Selecione um cliente--</option>
         {customers.map(customer =>(
-          <option selected={sale.customer_id == customer.id ? true : false} value={customer.id}>{customer.name}</option>       
+          <option key={customer.id} selected={sale.customer_id == customer.id ? true : false} value={customer.id}>{customer.name}</option>       
         ))}        
       </select>
      
@@ -107,10 +107,6 @@ export default function Cart() {
           <p>Nenhum produto adicionado ao carrinho.</p>
         )}
       </div>
-      
-      
-      
-      
       <ProductTable>     
         <thead>
           <tr>            
@@ -152,5 +148,6 @@ export default function Cart() {
           </Total>
         </footer>
     </Container>
+    </div>
   );
 }
