@@ -23,7 +23,7 @@ Considere sempre quantidade 1 para cada item adicionado na tela de venda;
 
 
 
-# - Bando de dados
+# - Banco de dados
 ![modelagem database](https://i.ibb.co/BP5DyXg/modelagem-database.png)
 
 Salvo as tabelas users, migrations e failed_jobs que foram criadas automaticamente por padrão pelo laravel no momento da execução da migration, a modelagem que atendeu esta implementação ficou com as seguintes entidades.
