@@ -11,8 +11,7 @@ import api from '../../services/api';
 
 export default function Cart() {
   const dispatch = useDispatch();
-  const {cart,sale} = useSelector(state => state);
-  console.tron.log(cart);
+  const {cart,sale} = useSelector(state => state);  
   const [productsCart,setProductsCart] = useState([]);
   const [totalSale,setTotalSale] = useState(0);
   const [maxEstimateDelivery,setMaxEstimateDelivery] = useState(0);
