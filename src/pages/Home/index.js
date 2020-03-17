@@ -11,9 +11,7 @@ export default function Home() {
 
   function handleAddProductCart(product){    
     dispatch(CartActions.addCart(product));    
-    toast.success("Produto adicionado com sucesso!",{
-      position: toast.POSITION.BOTTOM_RIGHT
-    });
+    toast.success("Produto adicionado com sucesso!");
   }
   
   const [products,setProducts] = useState([]);

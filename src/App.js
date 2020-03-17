@@ -15,7 +15,7 @@ function App() {
           <Header/>
           <Router/>
           <GlobalStyles/>
-          <ToastContainer autoClose={2000} />
+          <ToastContainer autoClose={2000} position={toast.POSITION.TOP_CENTER} />
       </BrowserRouter>
     </Provider>
   );

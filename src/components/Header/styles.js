@@ -7,18 +7,23 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items:center;
   margin: 50px 0;  
+ > div{
+    display: flex;
+    flex-direction: row;
+  }
 `;
-export const Logo = styled(Link)`
+export const Menu = styled(Link)`
   text-decoration: none;
   color:#FFF;
   font-size:20px;
+  :first-child{
+    border-right: solid 2px #FFF;
+  }
   div{
-    padding: 10px 15px;
-    border-radius: 0 10px;
+    padding: 10px 15px;    
     background-color:#0057a0;
     transition: all 0.2s;
-    &:hover{
-        border-radius: 10px 0;
+    &:hover{        
         background-color: ${darken(0.04,'#0057a0')};
       }
   }  

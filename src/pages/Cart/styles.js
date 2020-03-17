@@ -1,10 +1,22 @@
 import styled from 'styled-components';
 import {darken} from 'polished';
+
 export const Container = styled.div`
   padding:30px;
   background:#fff;
   border-radius: 4px; 
 
+  > select{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color:#FFF;
+    margin-bottom: 5px;
+    font-size:18px;
+    option{
+      text-align:center;
+    }
+  }
   > div{
     background-color:#FFF;
     padding:10px;
